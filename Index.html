@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madressa Admission Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/Assets/CSS/Style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+<u>
+
+    <h1 class="text-center mb-4">KARABALAI DINIYAT CLASS</h1>
+</u>
+            <h1 class="text-center mb-4">Madressa Admission Form</h1>
+            <p class="text-center text-muted mb-4">Please fill out all required fields carefully</p>
+            
+            <form id="admissionForm" action="https://getform.io/f/bmdmkwza" method="POST" enctype="multipart/form-data">
+                
+                
+                <!-- Candidate Personal Information Section -->
+                <div class="form-section">
+                    <h2 class="form-title">Candidate Personal Information</h2>
+                    
+                    <div class="row mb-3">
+                        <div class="col-lg-8 col-md-7">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="candidateName" class="form-label required-field">Candidate Name</label>
+                                    <input type="text" class="form-control" id="candidateName" name="Candidate Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="fatherName" class="form-label required-field">Father's Name</label>
+                                    <input type="text" class="form-control" id="fatherName" name="Father's Name" required>
+                                </div>
+                            </div>
+                            
+                            <div class="row mt-3">
+                                <div class="col-md-4 col-6">
+                                    <label for="candidateAge" class="form-label required-field">Age</label>
+                                    <input type="number" class="form-control" id="candidateAge" name="Age" min="5" max="18" required>
+                                </div>
+                                <div class="col-md-4 col-6">
+                                    <label for="email" class="form-label required-field">E-mail</label>
+                                    <input type="email" class="form-control" id="email" name="Email" required>
+                                </div>
+                                <div class="col-md-4 col-12 mt-md-0 mt-3">
+                                    <label for="contactNo" class="form-label required-field">Contact No. (Preferred WhatsApp)</label>
+                                    <input type="tel" class="form-control" id="contactNo" name="Contact Number" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-5 mt-md-0 mt-3">
+                            <label for="candidatePhoto" class="form-label required-field">Candidate Photo</label>
+                            <div class="photo-preview mb-2" id="photoPreview">
+                                <span class="text-muted">Preview will appear here</span>
+                            </div>
+                            <input type="file" class="form-control" id="candidatePhoto" name="Candidate Photo" accept="image/*" required>
+                            <small class="text-muted">(Passport size, max 2MB)</small>
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="birthForm" class="form-label">Birth Form/CINC</label>
+                            <input type="text" class="form-control" id="birthForm" name="Birth Form/CINC">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="jcic" class="form-label">Candidate JCIC</label>
+                            <input type="text" class="form-control" id="jcic" name="JCIC Number">
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="address" class="form-label required-field">Residential Address</label>
+                        <textarea class="form-control" id="address" name="Residential Address" rows="2" required></textarea>
+                    </div>
+                </div>
+                
+                <!-- School Information Section -->
+                <div class="form-section">
+                    <h2 class="form-title">School Information</h2>
+                    
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="schoolName" class="form-label required-field">School Name</label>
+                            <input type="text" class="form-control" id="schoolName" name="School Name" required>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <label for="schoolClass" class="form-label required-field">Current School Class</label>
+                            <select class="form-select" id="schoolClass" name="Current School Class" required>
+                                <option value="" selected disabled>Select class</option>
+                                <option value="Class 1">Class 1</option>
+                                <option value="Class 2">Class 2</option>
+                                <option value="Class 3">Class 3</option>
+                                <option value="Class 4">Class 4</option>
+                                <option value="Class 5">Class 5</option>
+                                <option value="Class 6">Class 6</option>
+                                <option value="Class 7">Class 7</option>
+                                <option value="Class 8">Class 8</option>
+                                <option value="Class 9">Class 9</option>
+                                <option value="Class 10">Class 10</option>
+                                <option value="Class 11">Class 11</option>
+                                <option value="Class 12">Class 12</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <label class="form-label required-field">School Type</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="School Type" id="communitySchool" value="Community School" required>
+                                <label class="form-check-label" for="communitySchool">Community School</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="School Type" id="nonCommunitySchool" value="Non-Community School" required>
+                                <label class="form-check-label" for="nonCommunitySchool">Non-Community School</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Enrollment Information Section -->
+                <div class="form-section">
+                    <h2 class="form-title">Enrollment Information</h2>
+                    
+                    <div class="row mb-3">
+                        <div class="col-md-6 col-sm-12">
+                            <label for="enrollmentClass" class="form-label required-field">Class Applying For</label>
+                            <select class="form-select" id="enrollmentClass" name="Class Applying For" required>
+                                <option value="" selected disabled>Select class</option>
+                                <option value="Prep Class">Prep Class</option>
+                                <option value="Class 1">Class 1</option>
+                                <option value="Class 2">Class 2</option>
+                                <option value="Class 3">Class 3</option>
+                                <option value="Class 4">Class 4</option>
+                                <option value="Class 5">Class 5</option>
+                                <option value="Class 6">Class 6</option>
+                                <option value="Class 7">Class 7</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label required-field">Has the candidate attended Ramaza classes or round table before?</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Attended Ramaza Classes" id="ramazaYes" value="Yes" required>
+                            <label class="form-check-label" for="ramazaYes">Yes</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Attended Ramaza Classes" id="ramazaNo" value="No" required>
+                            <label class="form-check-label" for="ramazaNo">No</label>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="previousMadressa" class="form-label">If yes, please provide details:</label>
+                        <textarea class="form-control" id="previousMadressa" name="Previous Madressa Details" rows="2"></textarea>
+                    </div>
+                </div>
+                
+                <!-- Additional Information Section -->
+                <div class="form-section">
+                    <h2 class="form-title">Additional Information</h2>
+                    
+                    <div class="mb-3">
+                        <label for="specialNeeds" class="form-label">Any special needs or medical conditions we should be aware of?</label>
+                        <textarea class="form-control" id="specialNeeds" name="Special Needs/Medical Conditions" rows="2"></textarea>
+                    </div>
+                    
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="termsAgreement" name="Agreed to Terms" required>
+                        <label class="form-check-label required-field" for="termsAgreement">I agree to the terms and conditions of the Madressa</label>
+                    </div>
+                </div>
+                
+                <!-- Form Submission -->
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button type="reset" class="btn btn-outline-secondary me-md-2">Reset Form</button>
+                    <button type="submit" class="btn btn-primary">Submit Application</button>
+                </div>
+                
+                <!-- Success Message (hidden by default) -->
+                <div id="result" class="mt-3 text-center" style="display: none;"></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="/Assets/JS/Script.js"></script>
+</body>
+</html>
